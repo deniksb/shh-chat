@@ -36,6 +36,7 @@ h1{
   .chat-window {
     height: 300px;
     width: 400px;
+    font-size:40px;
   }
   #chatSection {
     /* float: left; */
@@ -68,6 +69,9 @@ h1{
       height:100px;
       width:200px;
       font-size:40px;
+    }
+    .chat-window {
+      font-size:60px;
     }
 
 
