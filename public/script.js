@@ -27,7 +27,7 @@ function renderMessage(message){
     let displayedMessages = document.getElementsByClassName('render-message');
     let characterCount = 0;
     for(let i=0; i<displayedMessages.length;i++){
-      characterCount += (displayedMessages[i].innerHtml).length;
+      characterCount += (displayedMessages[i].innerText).length;
     }
     if( characterCount + message.length <= 310){
       chatWindow.appendChild(div)
