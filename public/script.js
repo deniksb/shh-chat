@@ -29,7 +29,7 @@ function renderMessage(message){
     for(let i=0; i<displayedMessages.length;i++){
       characterCount += (displayedMessages[i].innerText).length;
     }
-    if( characterCount + message.length <= 310){
+    if( characterCount + message.length <= 310 && displayedMessages.length <= 10){
       chatWindow.appendChild(div)
     }
     else {
