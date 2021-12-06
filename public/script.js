@@ -25,7 +25,7 @@ function renderMessage(message){
 
     div.innerText = message
     let displayedMessages = document.getElementsByClassName('render-message');
-    if( displayedMessaged.length <= 10){
+    if( displayedMessages.length <= 10){
       chatWindow.appendChild(div)
     }
     else {
