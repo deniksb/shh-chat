@@ -29,7 +29,7 @@ function renderMessage(message){
       chatWindow.appendChild(div)
     }
     else {
-      div.removeChild(displayedMessages[0])
+      chatWindow.removeChild(displayedMessages[0])
       chatWindow.appendChild(div)
     }
     
