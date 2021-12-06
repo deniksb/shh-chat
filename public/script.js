@@ -25,11 +25,16 @@ function renderMessage(message){
 
     div.innerText = message
     let displayedMessages = document.getElementsByClassName('render-message');
-    if( displayedMessages.length <= 10){
+    let characterCount = 0;
+    for(let i=0; i<displayedMessages.length;i++){
+      characterCount += (displayedMessages[i].innerHtml).length;
+    }
+    if( characterCount + message.length <= 310){
       chatWindow.appendChild(div)
     }
     else {
       chatWindow.removeChild(displayedMessages[0])
+      chatWindow.removeChild(displayedMessages[1])
       chatWindow.appendChild(div)
     }
     
